@@ -1,0 +1,458 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #4CAF50;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.8rem;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2rem 0;
+}
+
+section {
+    margin: 0 auto;
+    padding: 2rem;
+    max-width: 800px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+section h2 {
+    margin-bottom: 1rem;
+}
+
+section p {
+    margin-bottom: 1.5rem;
+}
+
+a.button {
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    background: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+a.button:hover {
+    background: #45a049;
+}
+
+/* Estilos para o formulário de contato */
+form {
+    display: grid;
+    gap: 1rem;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    padding: 0.7rem 1.5rem;
+    background: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button[type="submit"]:hover {
+    background: #45a049;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        text-align: center;
+        padding: 0;
+    }
+    
+    nav ul li {
+        display: block;
+        margin: 0;
+    }
+}
+
+/* Adicionando estilos para a página de serviços */
+.service {
+    margin-bottom: 2rem;
+}
+
+.service h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.service p {
+    margin-bottom: 1rem;
+}
+
+.service ul {
+    list-style-type: disc;
+    padding-left: 2rem;
+}
+
+.case-studies {
+    margin-top: 2rem;
+}
+
+.case-studies .case-study {
+    margin-bottom: 1rem;
+}
+
+.testimonials {
+    margin-top: 2rem;
+}
+
+.testimonials blockquote {
+    border-left: 3px solid #333;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.cta {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.cta h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.cta p {
+    margin-bottom: 1rem;
+}
+
+.cta .button {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos para a linha do tempo */
+.timeline {
+    margin-top: 2rem;
+}
+
+.timeline ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.timeline li {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.timeline-date {
+    position: absolute;
+    left: -2rem;
+    top: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #333;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.timeline-content {
+    margin-left: 2rem;
+    padding-left: 1rem;
+    border-left: 2px solid #333;
+}
+
+.timeline-content h4 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.timeline-content p {
+    margin-top: 0.5rem;
+}
+
+/* Estilos para a história detalhada */
+.history-details {
+    margin-top: 2rem;
+}
+
+.history-details p {
+    margin-bottom: 1rem;
+}
+
+/* Estilos para as fotos e imagens */
+.history-images {
+    margin-top: 2rem;
+}
+
+.history-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+/* Estilos para a visão para o futuro */
+.future-vision {
+    margin-top: 2rem;
+}
+
+.future-vision ul {
+    list-style-type: disc;
+    padding-left: 2rem;
+}
+
+.future-vision .button {
+    margin-top: 1rem;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Estilos para a seção 'O Que Fazemos' */
+.what-we-do {
+    margin-top: 2rem;
+}
+
+.what-we-do ul {
+    list-style-type: disc;
+    padding-left: 2rem;
+}
+
+/* Estilos para a seção 'Nossos Valores' */
+.our-values {
+    margin-top: 2rem;
+}
+
+.our-values ul {
+    list-style-type: disc;
+    padding-left: 2rem;
+}
+
+/* Estilos para a seção 'Benefícios' */
+.benefits {
+    margin-top: 2rem;
+}
+
+.benefits ul {
+    list-style-type: disc;
+    padding-left: 2rem;
+}
+
+/* Estilos para as imagens relevantes */
+.relevant-images {
+    margin-top: 2rem;
+}
+
+.relevant-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+/* Estilos para a chamada para ação */
+.cta {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.cta h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.cta p {
+    margin-bottom: 1rem;
+}
+
+.cta .button {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Estilos para a seção de introdução */
+#intro {
+    background-color: #f4f4f4;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+#intro h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#intro p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+#intro .button {
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Estilos para a seção de destaques */
+#highlights {
+    padding: 2rem 0;
+}
+
+.highlight {
+    margin-bottom: 2rem;
+}
+
+.highlight-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.highlight h3 {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.highlight p {
+    margin-bottom: 1rem;
+}
+
+/* Estilos para a seção sobre a empresa */
+#about {
+    background-color: #f4f4f4;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+#about p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+/* Estilos para a seção de depoimentos */
+#testimonials {
+    padding: 2rem 0;
+}
+
+.testimonial blockquote {
+    border-left: 4px solid #333;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+/* Estilos para a seção de chamada para ação */
+#cta {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+#cta h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+#cta p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+#cta .button {
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+    background-color: #fff;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+}
